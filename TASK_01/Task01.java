@@ -6,15 +6,14 @@ import java.util.List;
 
 public class Task01 {
 
-    public static void main (String[] args)
-    {
+    public static void main(String[] args) {
         Task01 task01 = new Task01();
         task01.run();
     }
 
     ArrayList<String> words = new ArrayList<>();
 
-    public void run (){
+    public void run() {
         words.add("word01");
         words.add("word02");
         words.add("word03");

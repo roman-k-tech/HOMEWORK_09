@@ -42,22 +42,21 @@ public class TASK_03 {
 
             Collection<Integer> values = latters.values();
             int sum = 0;
-            for (Integer i : values)
-            {
+            for (Integer i : values) {
                 sum = sum + i;
             }
 
-            Set<Character> characters= latters.keySet();
-            for (Character c : characters)
-            {
+            Set<Character> characters = latters.keySet();
+            for (Character c : characters) {
                 Double persent = (double) latters.get(c) * 100 / sum;
                 relative.put(c, persent);
             }
 
             System.out.println(relative.toString());
 
+        } catch (IOException e) {
+            System.out.println("ERROR");
         }
-        catch (IOException e) {System.out.println("ERROR");}
     }
 
 }

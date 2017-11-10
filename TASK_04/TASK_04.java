@@ -26,7 +26,7 @@ public class TASK_04 {
         queue.add(Penny);
     }
 
-    public void run (int i) {
+    public void run(int i) {
         String item;
         for (; i > 0; i--) {
             item = queue.pollFirst();
@@ -34,8 +34,7 @@ public class TASK_04 {
             queue.offerLast(item);
         }
 
-        for (String name : queue)
-        {
+        for (String name : queue) {
             System.out.println(name);
         }
     }
